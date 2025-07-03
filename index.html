@@ -13,105 +13,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Products</title>
-    <!-- Tailwind CSS CDN -->
+    <!-- Tailwind CSS CDN for easy styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Font: Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f0f4f8; /* Light blue-gray background */
+            background-color: #f0f2f5; /* Light gray background */
         }
     </style>
 </head>
-<body class="antialiased">
-    <!-- Navigation Bar -->
-    <nav class="bg-white shadow-md p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-gray-800">Our Store</a>
-            <div>
-                <a href="#" class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Products</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
-            </div>
-        </div>
-    </nav>
+<body class="flex flex-col items-center justify-center min-h-screen p-4">
+    <div class="container mx-auto max-w-4xl">
+        <h1 class="text-4xl font-bold text-gray-800 mb-10 text-center rounded-lg p-4 bg-white shadow-lg">
+            Our Amazing Products
+        </h1>
 
-    <!-- Hero Section -->
-    <header class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-20 text-center">
-        <div class="container mx-auto">
-            <h1 class="text-5xl font-extrabold mb-4">Discover Our Amazing Products</h1>
-            <p class="text-xl mb-8">High-quality items designed to enhance your life.</p>
-            <button class="bg-white text-indigo-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-                Shop All Products
-            </button>
-        </div>
-    </header>
-
-    <!-- Products Section -->
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Our Featured Products</h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <!-- Product Card 1 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-                    <img src="https://placehold.co/600x400/A78BFA/ffffff?text=Product+One" alt="Product One" class="w-full h-64 object-cover rounded-t-xl">
-                    <div class="p-6">
-                        <h3 class="text-3xl font-bold text-gray-900 mb-3">Premium Smartwatch</h3>
-                        <p class="text-gray-700 leading-relaxed mb-6">
-                            Stay connected and track your fitness with our sleek and powerful smartwatch.
-                            Featuring a vibrant display and long-lasting battery.
-                        </p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-4xl font-extrabold text-blue-600">$199.99</span>
-                            <div class="flex space-x-4">
-                                <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-300 ease-in-out">
-                                    Buy Now
-                                </button>
-                                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium py-3 px-6 rounded-full border border-blue-600 hover:border-blue-800 transition duration-300 ease-in-out">
-                                    Learn More
-                                </a>
-                            </div>
-                        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Product Card 1 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                <img class="w-full h-64 object-cover object-center rounded-t-xl" src="https://placehold.co/600x400/FF5733/FFFFFF?text=Product+A" alt="Product A Image">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-2">Stylish Smartwatch</h2>
+                    <p class="text-gray-600 text-base mb-4">
+                        Track your fitness, receive notifications, and stay connected with this sleek and modern smartwatch.
+                        Long-lasting battery and water-resistant design.
+                    </p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-3xl font-bold text-indigo-600">$199.99</span>
+                        <span class="text-sm text-gray-500 line-through">$249.99</span>
                     </div>
+                    <a href="thankyou.html" class="block w-full text-center bg-indigo-600 text-white py-3 px-6 rounded-lg font-semibold text-lg hover:bg-indigo-700 transition-colors duration-300 shadow-md">
+                        Buy Now
+                    </a>
                 </div>
+            </div>
 
-                <!-- Product Card 2 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-                    <img src="https://placehold.co/600x400/60A5FA/ffffff?text=Product+Two" alt="Product Two" class="w-full h-64 object-cover rounded-t-xl">
-                    <div class="p-6">
-                        <h3 class="text-3xl font-bold text-gray-900 mb-3">Wireless Noise-Cancelling Headphones</h3>
-                        <p class="text-gray-700 leading-relaxed mb-6">
-                            Immerse yourself in pure audio bliss with our advanced noise-cancelling headphones.
-                            Exceptional sound quality and comfort.
-                        </p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-4xl font-extrabold text-blue-600">$149.99</span>
-                            <div class="flex space-x-4">
-                                <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-300 ease-in-out">
-                                    Buy Now
-                                </button>
-                                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium py-3 px-6 rounded-full border border-blue-600 hover:border-blue-800 transition duration-300 ease-in-out">
-                                    Learn More
-                                </a>
-                            </div>
-                        </div>
+            <!-- Product Card 2 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                <img class="w-full h-64 object-cover object-center rounded-t-xl" src="https://placehold.co/600x400/33A0FF/FFFFFF?text=Product+B" alt="Product B Image">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-2">Premium Wireless Earbuds</h2>
+                    <p class="text-gray-600 text-base mb-4">
+                        Experience crystal-clear audio and deep bass with these comfortable wireless earbuds.
+                        Perfect for workouts and daily commutes.
+                    </p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-3xl font-bold text-indigo-600">$89.99</span>
+                        <span class="text-sm text-gray-500 line-through">$119.99</span>
                     </div>
+                    <a href="thankyou.html" class="block w-full text-center bg-indigo-600 text-white py-3 px-6 rounded-lg font-semibold text-lg hover:bg-indigo-700 transition-colors duration-300 shadow-md">
+                        Buy Now
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 mt-12">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2025 Our Store. All rights reserved.</p>
-            <div class="flex justify-center space-x-6 mt-4">
-                <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
-                <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
-            </div>
-        </div>
-    </footer>
+    </div>
 </body>
 </html>
